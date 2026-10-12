@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Baby sleep, week by week — nbsleep</title>
+<meta name="description" content="How much sleep a baby needs from week 0 to 12 months: totals, naps, wake windows, night wakings and feeds — researched ranges from AAP, CDC, NHS, Stanford and leading sleep guides.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f5f6fa" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e1420" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/svg+xml" href="favicon.svg?v=1">
+<meta property="og:title" content="Baby sleep, week by week — nbsleep">
+<meta property="og:description" content="Researched sleep ranges from week 0 to 12 months: totals, naps, wake windows, night wakings and feeding.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jorgequijano.github.io/nbsleep/">
+<link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<nav class="chips" aria-label="Sections">
+  <a href="#your-baby">Your baby now</a>
+  <a href="#weekly">Week by week</a>
+  <a href="#monthly">Month by month</a>
+  <a href="#samples">Sample days</a>
+  <a href="#feeding">Feeding</a>
+  <a href="#safety">Safe sleep</a>
+  <a href="#cues">Cues &amp; tips</a>
+  <a href="#spurts">Spurts &amp; regressions</a>
+  <a href="#sources">Sources</a>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="kicker">nbsleep · for tired parents</p>
+    <h1>Baby sleep, week by week</h1>
+    <p class="lead">What’s normal for your baby’s sleep from day&nbsp;1 to 12&nbsp;months — sleep totals, naps, wake windows, night wakings and feeds, as ranges gathered from health bodies and leading sleep guides.</p>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+
+  <section id="your-baby" class="card" aria-labelledby="yb-h">
+    <h2 id="yb-h">Your baby right now</h2>
+    <p class="note">Set the birth date once — it’s remembered in this browser, and the tables below highlight where your baby is. No baby yet? Enter the due date — you’ll get the week‑0 guide.</p>
+    <div class="calc">
+      <label for="birthdate">Birth date</label>
+      <input type="date" id="birthdate">
+      <button type="button" id="clearBirth" class="ghost">Clear</button>
+    </div>
+    <div id="ageOut" class="age-out" hidden aria-live="polite"></div>
+
+    <div class="wake">
+      <h3>Next-sleep helper</h3>
+      <p class="note">A “wake window” is how long your baby can comfortably be awake before the next sleep. It grows week by week — this uses your baby’s current age.</p>
+      <div class="calc">
+        <label for="wokeAt">Baby woke at</label>
+        <input type="time" id="wokeAt">
+        <span id="wakeOut" class="wake-out" aria-live="polite"></span>
+      </div>
+      <p class="tiny">Trust sleepy cues over the clock: the first window of the morning is shortest, the one before bed is the longest.</p>
+    </div>
+  </section>
+
+  <section id="weekly" class="card" aria-labelledby="wk-h">
+    <h2 id="wk-h">Week by week — 0 to 16 weeks</h2>
+    <p class="note">Typical ranges from the sources below. Individual babies swing wider than any table — some healthy newborns sleep 11&nbsp;h a day, some 19&nbsp;h. Watch your baby, not the clock.</p>
+    <div class="table-wrap">
+      <table id="weekTable">
+        <thead>
+          <tr>
+            <th scope="col">Age</th>
+            <th scope="col">Total sleep / 24h</th>
+            <th scope="col">Night / day split</th>
+            <th scope="col">Naps</th>
+            <th scope="col">Wake window</th>
+            <th scope="col">Night wakings</th>
+            <th scope="col">This stage</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <noscript><p class="note">Enable JavaScript to see the tables — the sources section at the bottom links to the original guidance.</p></noscript>
+    </div>
+  </section>
+
+  <section id="monthly" class="card" aria-labelledby="mo-h">
+    <h2 id="mo-h">Month by month — 3 to 12 months</h2>
+    <p class="note">For 4–12 months the AAP/CDC range is 12–16&nbsp;h per 24&nbsp;h. The rows below show typical practice ranges and nap / wake-window guidance from the cited guides.</p>
+    <div class="table-wrap">
+      <table id="monthTable">
+        <thead>
+          <tr>
+            <th scope="col">Age</th>
+            <th scope="col">Total sleep / 24h</th>
+            <th scope="col">Night / day split</th>
+            <th scope="col">Naps</th>
+            <th scope="col">Wake window</th>
+            <th scope="col">Night wakings</th>
+            <th scope="col">This stage</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="samples" class="card" aria-labelledby="s-h">
+    <h2 id="s-h">Sample days</h2>
+    <p class="note">Illustrative routines adapted from published guides — shapes to borrow from, not schedules to enforce. Times shift daily; that’s normal.</p>
+
+    <details>
+      <summary>Newborn — weeks 1–4</summary>
+      <ul class="sched">
+        <li><b>7:00 am</b> wake, change, feed</li>
+        <li><b>7:45</b> nap</li>
+        <li>Then roughly every 2 h, all day and night: <b>feed → change → nap</b></li>
+        <li><b>9–10 pm</b> “bedtime” (a late bedtime is normal at this age)</li>
+        <li>Overnight: feeds every ~2–3 h, straight back to sleep</li>
+      </ul>
+      <p class="tiny">No schedule yet — this stage is eat, sleep, repeat, on demand.</p>
+    </details>
+
+    <details>
+      <summary>Weeks 5–8</summary>
+      <ul class="sched">
+        <li><b>7:15 am</b> wake, feed</li>
+        <li><b>8:30</b> nap</li>
+        <li><b>10:30</b> feed · <b>11:30</b> nap</li>
+        <li><b>1:00 pm</b> feed · <b>2:00</b> nap</li>
+        <li><b>4:00</b> feed · <b>4:30</b> nap · <b>6:30</b> catnap</li>
+        <li><b>7:00</b> feed · cluster feeds ~8:00–9:00</li>
+        <li><b>10:00</b> bedtime</li>
+        <li>Night feeds ~2:00 and ~5:00 am</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Weeks 9–12</summary>
+      <ul class="sched">
+        <li><b>7:00 am</b> wake, feed</li>
+        <li><b>8:45</b> nap · <b>10:00</b> feed</li>
+        <li><b>11:45</b> nap · <b>1:00 pm</b> feed</li>
+        <li><b>2:30</b> nap · <b>4:00</b> feed · <b>5:00</b> short nap</li>
+        <li><b>7:00</b> feed · <b>7:30</b> bedtime</li>
+        <li>Night feed ~3:30 am (formula-fed babies often drop this around now)</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>4 months</summary>
+      <ul class="sched">
+        <li><b>7:00 am</b> wake, feed</li>
+        <li><b>8:45</b> nap (1–2 h) · <b>11:00</b> feed</li>
+        <li><b>12:30 pm</b> nap (1–2 h) · <b>2:30</b> feed</li>
+        <li><b>4:00</b> nap (45–60 min) · <b>5:30</b> feed</li>
+        <li><b>6:30</b> bath + wind-down · <b>7:00</b> bedtime</li>
+        <li>1–2 night feeds</li>
+      </ul>
+      <p class="tiny">If the 4-month regression hits: short naps and extra wakings for 2–6 weeks are development, not a setback.</p>
+    </details>
+
+    <details>
+      <summary>6 months</summary>
+      <ul class="sched">
+        <li><b>7:00 am</b> wake + milk · <b>7:30</b> breakfast</li>
+        <li><b>9:30</b> nap (1–1.5 h) · <b>11:00</b> milk</li>
+        <li><b>12:00 pm</b> lunch · <b>1:30</b> nap (1–1.5 h) · <b>3:00</b> milk</li>
+        <li><b>5:30</b> dinner · <b>6:30</b> routine · <b>7:00</b> bedtime</li>
+      </ul>
+      <p class="tiny">Two-nap version, after the 3→2 nap transition (usually 6–8 months).</p>
+    </details>
+
+    <details>
+      <summary>9 months</summary>
+      <ul class="sched">
+        <li><b>6:30–7:00 am</b> wake · <b>7:30</b> breakfast</li>
+        <li><b>10:00</b> nap (~1 h) · <b>11:30</b> milk · <b>12:30 pm</b> lunch</li>
+        <li><b>2:30</b> nap (1–1.5 h) · <b>4:00</b> snack</li>
+        <li><b>5:30</b> dinner · <b>6:45</b> routine · <b>7:15</b> bedtime</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>12 months</summary>
+      <ul class="sched">
+        <li><b>7:00 am</b> wake + milk · <b>7:30</b> breakfast</li>
+        <li><b>10:15</b> nap (~1–1.25 h) · <b>12:30 pm</b> lunch</li>
+        <li><b>3:00</b> nap (~1–1.25 h) (keep two naps if you can)</li>
+        <li><b>5:45</b> dinner · <b>7:00</b> milk + routine · <b>7:30</b> bedtime</li>
+      </ul>
+      <p class="tiny">The shift to one nap usually waits until 13–18 months.</p>
+    </details>
+  </section>
+
+  <section id="feeding" class="card" aria-labelledby="f-h">
+    <h2 id="f-h">Feeding &amp; growth</h2>
+    <p class="note">Feed on demand — hunger cues (rooting, hand to mouth, lip smacking) come before crying, which is a late sign. In the early weeks, don’t let a newborn go longer than ~4 h between feeds, day or night, unless your pediatrician has ok’d it.</p>
+    <div class="table-wrap">
+      <table class="feed">
+        <thead>
+          <tr><th scope="col">Age</th><th scope="col">Feeds / 24h</th><th scope="col">Per feed</th><th scope="col">Notes</th></tr>
+        </thead>
+        <tbody>
+          <tr><td data-label="Age">Days 1–3</td><td data-label="Feeds / 24h">8–12+</td><td data-label="Per feed">colostrum, tiny amounts</td><td data-label="Notes">Every 1–3 h, irregular; the second night is often intense.</td></tr>
+          <tr><td data-label="Age">Days 4–7</td><td data-label="Feeds / 24h">8–12</td><td data-label="Per feed">1–2 oz (30–60 ml)</td><td data-label="Notes">Milk comes in; ~10–20 oz (300–600 ml) total by day 7.</td></tr>
+          <tr><td data-label="Age">Weeks 2–3</td><td data-label="Feeds / 24h">8–12</td><td data-label="Per feed">2–3 oz (60–90 ml)</td><td data-label="Notes">Growth spurt ~2–3 weeks; ~15–25 oz total per day.</td></tr>
+          <tr><td data-label="Age">Weeks 3–4</td><td data-label="Feeds / 24h">7–9</td><td data-label="Per feed">2–3 oz (60–90 ml)</td><td data-label="Notes">Evening cluster feeding is common.</td></tr>
+          <tr><td data-label="Age">1–2 months</td><td data-label="Feeds / 24h">6–8</td><td data-label="Per feed">3–4 oz (90–120 ml)</td><td data-label="Notes">~3–4 oz every 3–4 h by the end of month 1.</td></tr>
+          <tr><td data-label="Age">3–5 months</td><td data-label="Feeds / 24h">5–6</td><td data-label="Per feed">4–6 oz (120–180 ml)</td><td data-label="Notes">~24–30 oz (700–900 ml) per day; night feeds may persist.</td></tr>
+          <tr><td data-label="Age">6–12 months</td><td data-label="Feeds / 24h">4–5 + solids</td><td data-label="Per feed">6–8 oz (180–240 ml)</td><td data-label="Notes">Solids start ~6 months; keep milk feeds going.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="grid2">
+      <div class="box ok">
+        <h3>Signs baby is getting enough</h3>
+        <ul>
+          <li><b>Wet diapers:</b> day 1: 1–2 → by day 5–7: <b>6+ per day</b>, pale yellow.</li>
+          <li><b>Poops:</b> black/tarry → green → by day 5: yellow &amp; seedy; often 3–8/day until ~6 weeks, then fewer.</li>
+          <li><b>Weight:</b> back to birth weight by day 10–14, gaining steadily after.</li>
+          <li>Content after feeds; you can see/hear swallowing.</li>
+        </ul>
+      </div>
+      <div class="box warn">
+        <h3>Call your pediatrician if…</h3>
+        <ul>
+          <li>Fewer than <b>6 wet</b> or fewer than <b>3 dirty</b> diapers a day by day 5.</li>
+          <li>Baby is still <b>losing weight after day 5</b>.</li>
+          <li>Fewer than <b>8 feeds</b> in 24 h most days, or very hard to wake for feeds.</li>
+          <li>Fever, jaundice getting deeper, or baby seems unusually limp/floppy.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="safety" class="card" aria-labelledby="safe-h">
+    <h2 id="safe-h">Safe sleep (AAP)</h2>
+    <ul class="check">
+      <li><b>Back for every sleep</b> — naps and nights. If baby rolls both ways on their own, let them choose their position.</li>
+      <li><b>Firm, flat surface</b> — CPSC-approved crib / bassinet / play yard, tight fitted sheet only. No inclined surfaces (over ~10° is unsafe).</li>
+      <li><b>Room-share, don’t bed-share</b> — same room as you (not the same bed) for at least the first 6 months; it can cut SIDS risk by up to 50%. Bed-sharing risk is 5–10× higher under 4 months.</li>
+      <li><b>Keep the sleep space bare</b> — no pillows, blankets, bumpers, toys, positioners; never weighted blankets or weighted swaddles.</li>
+      <li><b>Don’t overheat</b> — one layer more than you’re wearing; no hats indoors; check for sweating or a hot chest.</li>
+      <li><b>Pacifier at nap &amp; bedtime</b> — once breastfeeding is established, it’s linked to lower SIDS risk.</li>
+      <li><b>Found asleep elsewhere?</b> — car seat, stroller, swing, sling: move baby to a firm flat surface as soon as you can.</li>
+      <li><b>Smoke-free</b> air around baby, always.</li>
+    </ul>
+    <div class="box ok">
+      <h3>Tummy time (awake &amp; supervised)</h3>
+      <p>Start the day you get home: 2–3 short sessions of 3–5 minutes. <b>Work up to 15–30 minutes a day by 7 weeks.</b> It builds neck/shoulder strength and prevents flat spots — just never for sleep, and never unattended.</p>
+    </div>
+  </section>
+
+  <section id="cues" class="card" aria-labelledby="c-h">
+    <h2 id="c-h">Sleepy cues &amp; settling</h2>
+    <div class="grid2">
+      <div class="box">
+        <h3>Getting sleepy</h3>
+        <ul>
+          <li>Yawning, jerky movements</li>
+          <li>Staring into space / zoning out</li>
+          <li>Looking away, losing interest</li>
+          <li>Fussing — this is the <i>late</i> cue in a newborn; start the wind-down at the first yawn</li>
+        </ul>
+      </div>
+      <div class="box warn">
+        <h3>Already overtired</h3>
+        <ul>
+          <li>Hard to settle, crying ramps fast</li>
+          <li>Naps under 30 minutes</li>
+          <li>Extra night wakings</li>
+          <li>Fix: shorten wake windows by 10–15 minutes for a few days</li>
+        </ul>
+      </div>
+    </div>
+    <div class="box">
+      <h3>Tips that actually help</h3>
+      <ul>
+        <li><b>Day/night steering:</b> days bright, chatty and interactive; nights dark, quiet and boring (no play). Cap any single daytime nap at 2–3 h in the first weeks.</li>
+        <li><b>Swaddle + white noise + dark room</b> for newborns (stop swaddling at first signs of rolling).</li>
+        <li><b>Eat → wake → sleep rhythm</b>: with newborns, feed right after wake so sleep isn’t tied to feeding.</li>
+        <li><b>Wakings are normal:</b> many babies 6–12 months old still wake 1–3× a night, and night feeds can stay normal through the first year — especially if breastfeeding.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="spurts" class="card" aria-labelledby="sp-h">
+    <h2 id="sp-h">Growth spurts &amp; regressions</h2>
+    <p class="note">Sleep doesn’t break after the newborn days — it reorganizes. These are the classic windows parents hit:</p>
+    <ol class="timeline">
+      <li><b>~2–3 weeks</b> — growth spurt: hungrier, fussier for a day or two.</li>
+      <li><b>~6 weeks</b> — growth spurt; fussiness often peaks; evening cluster feeds.</li>
+      <li><b>~8 weeks</b> — growth spurt; the first long night stretch often appears here.</li>
+      <li><b>~3–4 months</b> — the “4-month regression”: sleep cycles mature to adult-style 45–60 min; more wakings and short naps for 2–6 weeks. It’s development, not damage.</li>
+      <li><b>~8–10 months</b> — separation anxiety + crawling/standing: 2–4 weeks of disruptions, common.</li>
+      <li><b>~12 months</b> — walking and a language burst: 2–3 weeks.</li>
+    </ol>
+    <p class="note">Regressions pass. Keep responses boring and consistent, protect the routine, and check in with your pediatrician if you’re worried.</p>
+  </section>
+
+  <section id="sources" class="card" aria-labelledby="src-h">
+    <h2 id="src-h">Sources &amp; disclaimer</h2>
+    <p class="note">The tables blend the guidance below; sources differ a little by design (for example: AAP/NSF say 14–17 h for 0–3 months, Stanford says 16–17 h, NHS says up to ~18 h is normal). The tables show consensus ranges — open the originals for detail.</p>
+    <ul class="src">
+      <li>AAP HealthyChildren.org — <a href="https://www.healthychildren.org/English/ages-stages/baby/sleep/Pages/A-Parents-Guide-to-Safe-Sleep.aspx" target="_blank" rel="noopener">How to Keep Your Sleeping Baby Safe</a></li>
+      <li>AAP HealthyChildren.org — <a href="https://www.healthychildren.org/English/ages-stages/baby/feeding-nutrition/Pages/How-Often-and-How-Much-Should-Your-Baby-Eat.aspx" target="_blank" rel="noopener">How Often and How Much Should Your Baby Eat?</a></li>
+      <li>AAP HealthyChildren.org — <a href="https://www.healthychildren.org/English/ages-stages/baby/sleep/Pages/back-to-sleep-tummy-to-play.aspx" target="_blank" rel="noopener">Back to Sleep, Tummy to Play</a></li>
+      <li>AAP HealthyChildren.org — <a href="https://www.healthychildren.org/English/ages-stages/baby/sleep/Pages/getting-your-baby-to-sleep.aspx" target="_blank" rel="noopener">Getting Your Baby to Sleep</a></li>
+      <li>CDC — <a href="https://www.cdc.gov/infant-toddler-nutrition/breastfeeding/newborn-basics.html" target="_blank" rel="noopener">Newborn Breastfeeding Basics</a></li>
+      <li>CDC — <a href="https://www.cdc.gov/infant-toddler-nutrition/breastfeeding/how-much-and-how-often.html" target="_blank" rel="noopener">How Much and How Often to Breastfeed</a></li>
+      <li>NHS — <a href="https://www.nhs.uk/best-start-in-life/baby/baby-basics/newborn-and-baby-sleeping-advice-for-parents/your-babys-sleep-patterns/" target="_blank" rel="noopener">Your baby’s sleep patterns</a></li>
+      <li>NHS — <a href="https://www.nhs.uk/baby/breastfeeding-and-bottle-feeding/breastfeeding-problems/enough-milk/" target="_blank" rel="noopener">Is your baby getting enough milk?</a></li>
+      <li>Stanford Medicine Children’s Health — <a href="https://www.stanfordchildrens.org/en/topic/default?id=infant-sleep-90-P02237" target="_blank" rel="noopener">Infant Sleep</a></li>
+      <li>Cleveland Clinic — <a href="https://my.clevelandclinic.org/health/articles/9693-feeding-your-baby-the-first-year" target="_blank" rel="noopener">Feeding Your Baby: The First Year</a></li>
+      <li>Johns Hopkins Medicine — <a href="https://www.hopkinsmedicine.org/health/wellness-and-prevention/feeding-guide-for-the-first-year" target="_blank" rel="noopener">Feeding Guide for the First Year</a></li>
+      <li>CHOP — <a href="https://www.chop.edu/primary-care/healthy-sleep-habits" target="_blank" rel="noopener">Healthy Sleep Habits</a></li>
+      <li>BabySleepSite — <a href="https://www.babysleepsite.com/newborns/newborn-sleep-schedules-by-week/" target="_blank" rel="noopener">Newborn Sleep Schedules by Week</a></li>
+      <li>The Sleep Lady — <a href="https://sleeplady.com/baby-sleep/wake-windows-by-age" target="_blank" rel="noopener">Wake Windows by Age</a></li>
+      <li>Raising Children Network — <a href="https://raisingchildren.net.au/babies/sleep/understanding-sleep/baby-sleep-2-12-months" target="_blank" rel="noopener">Baby sleep at 2–12 months</a></li>
+    </ul>
+    <p class="tiny"><b>This is an educational reference, not medical advice.</b> Every baby is different — for anything about your baby’s sleep, feeding, growth or health, talk to your pediatrician.</p>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <p class="tiny">nbsleep · built from public guidance by AAP HealthyChildren.org, CDC, NHS, Stanford Children’s and the sleep guides cited above. Made with care for very tired people.</p>
+</footer>
+
+<script src="app.js?v=1"></script>
+</body>
+</html>
